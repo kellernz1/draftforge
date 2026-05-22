@@ -29,7 +29,7 @@ export const DraftPage = () => {
             >
               <h2 className="font-display text-3xl font-bold text-white">Normal Draft</h2>
               <p className="mt-3 text-sm leading-6 text-slate-400">
-                Fluxo atual de draft em jogo unico, com bans, picks, analise, recomendacoes e counters.
+                Fluxo atual de draft em jogo único, com bans, picks, analise, recomendações e counters.
               </p>
             </button>
             <button
@@ -39,7 +39,7 @@ export const DraftPage = () => {
             >
               <h2 className="font-display text-3xl font-bold text-white">Fearless Draft</h2>
               <p className="mt-3 text-sm leading-6 text-slate-400">
-                Serie de ate 5 partidas. Campeoes pickados em partidas anteriores ficam bloqueados para os proximos jogos.
+                Série de até 5 partidas. Campeões pickados em partidas anteriores ficam bloqueados para os próximos jogos.
               </p>
             </button>
           </div>
