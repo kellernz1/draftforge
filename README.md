@@ -56,7 +56,7 @@ After pushing the repository to GitHub:
 7. Your site will be available at:
 
 ```text
-https://YOUR_USERNAME.github.io/YOUR_REPOSITORY_NAME/
+https://kellernz1.github.io/draftforge/
 ```
 
 The workflow runs:
