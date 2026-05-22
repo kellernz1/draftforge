@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-night: 10 14 26;
+  --color-panel: 17 24 39;
+  --color-line: 30 45 69;
+  color-scheme: dark;
+}
+
+:root.theme-light {
+  --color-night: 241 245 249;
+  --color-panel: 255 255 255;
+  --color-line: 203 213 225;
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: rgb(var(--color-night));
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--color-line));
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(var(--color-night));
+}
+
+.theme-light .text-white,
+.theme-light .text-slate-100,
+.theme-light .text-slate-200 {
+  color: #0f172a;
+}
+
+.theme-light .text-slate-300,
+.theme-light .text-slate-400 {
+  color: #475569;
+}
+
+.theme-light .text-slate-500,
+.theme-light .text-slate-600 {
+  color: #64748b;
+}
+
+.theme-light .bg-slate-800 {
+  background-color: #e2e8f0;
+}
+
+.theme-light .bg-night\/60,
+.theme-light .bg-night\/70 {
+  background-color: rgb(248 250 252 / 0.88);
+}
+
+.theme-light .bg-panel\/90 {
+  background-color: rgb(255 255 255 / 0.94);
+}
+
+.theme-light input,
+.theme-light select,
+.theme-light textarea {
+  color: #0f172a;
+}
+
+.theme-light .shadow-glow {
+  box-shadow: 0 0 30px rgb(59 130 246 / 0.14);
+}
