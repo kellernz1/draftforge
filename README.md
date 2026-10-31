@@ -2,9 +2,9 @@
 
 ## About
 
-DraftForge is a League of Legends-inspired draft simulator. It supports Normal Draft and Fearless Draft, champion bans and picks, composition analysis, role-based recommendations, counter-pick suggestions, and a persistent tier list editor.
+DraftForge is a League of Legends-inspired competitive draft lab. It supports Normal and Fearless Draft, flexible role assignment, composition analysis, explainable recommendations, counter-pick suggestions, local history/export, and a persistent tier list editor.
 
-The champion dataset is generated from Riot Data Dragon and adjusted for the current competitive meta reference used by the project.
+Champion portraits use Riot Data Dragon. Tiers, relationships, and recommendations are an explicitly offline, locally curated model; they are not represented as live Riot statistics.
 
 ## Installation
 
@@ -29,7 +29,10 @@ npm run preview
 5. Use the central champion grid to pick or ban according to the current draft step.
 6. Use role filters and search to find champions quickly.
 7. Review team analysis, recommendations, and counter-pick suggestions in the lower panels.
-8. Use the Tier List page to edit champion tiers, roles, tags, synergies, counters, and notes.
+8. Picks appear chronologically from Pick 1 to Pick 5; assign or swap their positions with the role selector.
+9. Archive completed drafts and export them as JSON from the History page.
+10. Use the Tier List page to edit champion tiers, roles, tags, synergies, counters, weaknesses, and notes.
+11. Every Tier List save creates a local patch snapshot that can be compared with later tier changes.
 
 ## Architecture
 
@@ -40,6 +43,18 @@ npm run preview
 - `src/components`: reusable UI components.
 - `src/pages`: main application pages.
 - `.github/workflows/deploy.yml`: GitHub Pages deployment workflow.
+- `.github/workflows/ci.yml`: lint, tests, type-check, and production build on pushes and pull requests.
+
+## Quality checks
+
+```bash
+npm run lint
+npm test
+npm run build
+npm run check
+```
+
+The persisted Zustand stores are versioned and migrate older DraftForge browser data forward.
 
 ## GitHub Pages Deployment
 

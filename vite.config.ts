@@ -1,31 +1,12 @@
-import { defineConfig } from "vite";
+import { defineConfig } from "vitest/config";
 import react from "@vitejs/plugin-react";
 
-export default defineConfig(({ command }) => ({
+export default defineConfig({
   base: "./",
-  plugins:
-    command === "build"
-      ? [
-          react(),
-          {
-            name: "draftforge-classic-script",
-            transformIndexHtml(html: string) {
-              return html.replace('<script type="module" crossorigin', "<script defer");
-            },
-          },
-        ]
-      : [],
-  esbuild: {
-    jsx: "automatic",
+  plugins: [react()],
+  test: {
+    environment: "jsdom",
+    setupFiles: "./src/test/setup.ts",
+    css: true,
   },
-  build: {
-    modulePreload: false,
-    rollupOptions: {
-      output: {
-        format: "iife",
-        inlineDynamicImports: true,
-        name: "DraftForge",
-      },
-    },
-  },
-}));
+});

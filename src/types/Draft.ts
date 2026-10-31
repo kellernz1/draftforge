@@ -2,6 +2,7 @@ import type { Role } from "./Champion";
 
 export type TeamDraft = {
   bans: (string | null)[];
+  pickOrder: string[];
   picks: {
     role: Role;
     championId: string | null;
@@ -11,7 +12,6 @@ export type TeamDraft = {
 export type DraftPhaseStep = {
   team: "blue" | "red";
   action: "ban" | "pick";
-  role?: Role;
 };
 
 export type DraftState = {
@@ -21,4 +21,14 @@ export type DraftState = {
   blueTeam: TeamDraft;
   redTeam: TeamDraft;
   order: DraftPhaseStep[];
+};
+
+export type ArchivedDraft = {
+  id: string;
+  createdAt: string;
+  patchVersion: string;
+  mode: "normal" | "fearless";
+  gameNumber: number;
+  blueTeam: TeamDraft;
+  redTeam: TeamDraft;
 };

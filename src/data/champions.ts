@@ -1,6 +1,6 @@
 import type { Champion } from "../types/Champion";
 
-// Dataset gerado a partir do Data Dragon 16.10.1 e ajustado para o meta competitivo do patch 26.10.
+// Dataset-base gerado a partir do Data Dragon e curado localmente. Patch visual atual: 16.21.1.
 // Tiers: S = prioridade alta/flex/pro play, A = forte e draftavel, B = situacional, C = niche ou baixo valor competitivo.
 export const champions: Champion[] = [
   {
@@ -18,7 +18,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "ahri",
@@ -45,7 +45,7 @@ export const champions: Champion[] = [
       "wukong"
     ],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "akali",
@@ -63,7 +63,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "akshan",
@@ -81,7 +81,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "alistar",
@@ -109,7 +109,7 @@ export const champions: Champion[] = [
       "varus"
     ],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier S estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier S estimado para draft competitivo."
   },
   {
     "id": "ambessa",
@@ -129,7 +129,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier S estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier S estimado para draft competitivo."
   },
   {
     "id": "amumu",
@@ -150,7 +150,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "anivia",
@@ -167,7 +167,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "annie",
@@ -185,7 +185,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "aphelios",
@@ -210,7 +210,7 @@ export const champions: Champion[] = [
       "skarner",
       "nautilus"
     ],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier S estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier S estimado para draft competitivo."
   },
   {
     "id": "ashe",
@@ -230,7 +230,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "aurelion-sol",
@@ -248,7 +248,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "aurora",
@@ -271,7 +271,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier S estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier S estimado para draft competitivo."
   },
   {
     "id": "azir",
@@ -299,7 +299,7 @@ export const champions: Champion[] = [
       "taliyah",
       "vi"
     ],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier S estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier S estimado para draft competitivo."
   },
   {
     "id": "bard",
@@ -318,7 +318,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "belveth",
@@ -335,7 +335,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "blitzcrank",
@@ -354,7 +354,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "brand",
@@ -374,7 +374,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "braum",
@@ -397,7 +397,7 @@ export const champions: Champion[] = [
     ],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier S estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier S estimado para draft competitivo."
   },
   {
     "id": "briar",
@@ -416,7 +416,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "caitlyn",
@@ -434,7 +434,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "camille",
@@ -453,7 +453,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "cassiopeia",
@@ -470,7 +470,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "chogath",
@@ -489,7 +489,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "corki",
@@ -510,7 +510,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier S estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier S estimado para draft competitivo."
   },
   {
     "id": "darius",
@@ -529,7 +529,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "diana",
@@ -549,7 +549,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "dr-mundo",
@@ -568,7 +568,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier C estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier C estimado para draft competitivo."
   },
   {
     "id": "draven",
@@ -585,7 +585,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "ekko",
@@ -605,7 +605,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "elise",
@@ -624,7 +624,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "evelynn",
@@ -643,7 +643,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "ezreal",
@@ -661,7 +661,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "fiddlesticks",
@@ -679,7 +679,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "fiora",
@@ -698,7 +698,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "fizz",
@@ -717,7 +717,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "galio",
@@ -737,7 +737,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "gangplank",
@@ -754,7 +754,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "garen",
@@ -773,7 +773,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier C estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier C estimado para draft competitivo."
   },
   {
     "id": "gnar",
@@ -792,7 +792,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "gragas",
@@ -812,7 +812,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "graves",
@@ -828,7 +828,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "gwen",
@@ -845,7 +845,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "hecarim",
@@ -864,7 +864,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "heimerdinger",
@@ -883,7 +883,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "hwei",
@@ -901,7 +901,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "illaoi",
@@ -920,7 +920,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier C estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier C estimado para draft competitivo."
   },
   {
     "id": "irelia",
@@ -940,7 +940,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "ivern",
@@ -958,7 +958,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "janna",
@@ -977,7 +977,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "jarvan-iv",
@@ -997,7 +997,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "jax",
@@ -1015,7 +1015,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "jayce",
@@ -1035,7 +1035,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "jhin",
@@ -1053,7 +1053,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "jinx",
@@ -1084,7 +1084,7 @@ export const champions: Champion[] = [
       "vi",
       "blitzcrank"
     ],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier S estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier S estimado para draft competitivo."
   },
   {
     "id": "ksante",
@@ -1103,7 +1103,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier S estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier S estimado para draft competitivo."
   },
   {
     "id": "kaisa",
@@ -1121,7 +1121,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier S estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier S estimado para draft competitivo."
   },
   {
     "id": "kalista",
@@ -1151,7 +1151,7 @@ export const champions: Champion[] = [
       "braum",
       "nautilus"
     ],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier S estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier S estimado para draft competitivo."
   },
   {
     "id": "karma",
@@ -1172,7 +1172,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "karthus",
@@ -1189,7 +1189,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "kassadin",
@@ -1208,7 +1208,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "katarina",
@@ -1227,7 +1227,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier C estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier C estimado para draft competitivo."
   },
   {
     "id": "kayle",
@@ -1246,7 +1246,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "kayn",
@@ -1265,7 +1265,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "kennen",
@@ -1282,7 +1282,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "khazix",
@@ -1299,7 +1299,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "kindred",
@@ -1315,7 +1315,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "kled",
@@ -1332,7 +1332,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "kogmaw",
@@ -1351,7 +1351,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "leblanc",
@@ -1370,7 +1370,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "lee-sin",
@@ -1389,7 +1389,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "leona",
@@ -1414,7 +1414,7 @@ export const champions: Champion[] = [
     ],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier S estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier S estimado para draft competitivo."
   },
   {
     "id": "lillia",
@@ -1433,7 +1433,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "lissandra",
@@ -1455,7 +1455,28 @@ export const champions: Champion[] = [
     ],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
+  },
+  {
+    "id": "locke",
+    "name": "Locke",
+    "roles": [
+      "Mid"
+    ],
+    "damageType": "Magic",
+    "tags": [
+      "Assassin",
+      "Mage",
+      "Dive",
+      "Pick",
+      "Early",
+      "WaveClear"
+    ],
+    "tier": "A",
+    "counters": [],
+    "goodWith": [],
+    "weakAgainst": [],
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Assassino/mago de rota do meio."
   },
   {
     "id": "lucian",
@@ -1475,7 +1496,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "lulu",
@@ -1494,7 +1515,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "lux",
@@ -1515,7 +1536,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "malphite",
@@ -1539,7 +1560,7 @@ export const champions: Champion[] = [
     ],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "malzahar",
@@ -1556,7 +1577,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "maokai",
@@ -1577,7 +1598,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "master-yi",
@@ -1596,7 +1617,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier C estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier C estimado para draft competitivo."
   },
   {
     "id": "mel",
@@ -1617,7 +1638,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "milio",
@@ -1636,7 +1657,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "miss-fortune",
@@ -1654,7 +1675,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "mordekaiser",
@@ -1673,7 +1694,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "morgana",
@@ -1697,7 +1718,7 @@ export const champions: Champion[] = [
     ],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "naafiri",
@@ -1716,7 +1737,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "nami",
@@ -1735,7 +1756,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "nasus",
@@ -1754,7 +1775,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier C estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier C estimado para draft competitivo."
   },
   {
     "id": "nautilus",
@@ -1779,7 +1800,7 @@ export const champions: Champion[] = [
     ],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier S estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier S estimado para draft competitivo."
   },
   {
     "id": "neeko",
@@ -1799,7 +1820,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "nidalee",
@@ -1820,7 +1841,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "nilah",
@@ -1839,7 +1860,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "nocturne",
@@ -1858,7 +1879,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "nunu-and-willump",
@@ -1877,7 +1898,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "olaf",
@@ -1897,7 +1918,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "orianna",
@@ -1922,7 +1943,7 @@ export const champions: Champion[] = [
       "wukong"
     ],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier S estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier S estimado para draft competitivo."
   },
   {
     "id": "ornn",
@@ -1940,7 +1961,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "pantheon",
@@ -1961,7 +1982,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "poppy",
@@ -1983,7 +2004,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "pyke",
@@ -2002,7 +2023,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "qiyana",
@@ -2019,7 +2040,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier C estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier C estimado para draft competitivo."
   },
   {
     "id": "quinn",
@@ -2037,7 +2058,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "rakan",
@@ -2055,7 +2076,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "rammus",
@@ -2072,7 +2093,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier C estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier C estimado para draft competitivo."
   },
   {
     "id": "reksai",
@@ -2091,7 +2112,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "rell",
@@ -2124,7 +2145,7 @@ export const champions: Champion[] = [
       "janna",
       "braum"
     ],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier S estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier S estimado para draft competitivo."
   },
   {
     "id": "renata-glasc",
@@ -2143,7 +2164,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "renekton",
@@ -2164,7 +2185,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier S estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier S estimado para draft competitivo."
   },
   {
     "id": "rengar",
@@ -2184,7 +2205,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "riven",
@@ -2203,7 +2224,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "rumble",
@@ -2223,7 +2244,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier S estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier S estimado para draft competitivo."
   },
   {
     "id": "ryze",
@@ -2241,7 +2262,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "samira",
@@ -2259,7 +2280,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "sejuani",
@@ -2287,7 +2308,7 @@ export const champions: Champion[] = [
       "azir"
     ],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier S estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier S estimado para draft competitivo."
   },
   {
     "id": "senna",
@@ -2306,7 +2327,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "seraphine",
@@ -2327,7 +2348,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "sett",
@@ -2348,7 +2369,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "shaco",
@@ -2365,7 +2386,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier C estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier C estimado para draft competitivo."
   },
   {
     "id": "shen",
@@ -2382,7 +2403,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "shyvana",
@@ -2401,7 +2422,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "singed",
@@ -2420,7 +2441,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "sion",
@@ -2439,7 +2460,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier C estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier C estimado para draft competitivo."
   },
   {
     "id": "sivir",
@@ -2455,7 +2476,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "skarner",
@@ -2487,7 +2508,7 @@ export const champions: Champion[] = [
       "taliyah",
       "poppy"
     ],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier S estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier S estimado para draft competitivo."
   },
   {
     "id": "smolder",
@@ -2507,7 +2528,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "sona",
@@ -2526,7 +2547,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier C estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier C estimado para draft competitivo."
   },
   {
     "id": "soraka",
@@ -2545,7 +2566,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "swain",
@@ -2565,7 +2586,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "sylas",
@@ -2584,7 +2605,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "syndra",
@@ -2601,7 +2622,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "tahm-kench",
@@ -2621,7 +2642,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "taliyah",
@@ -2645,7 +2666,7 @@ export const champions: Champion[] = [
       "nautilus"
     ],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier S estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier S estimado para draft competitivo."
   },
   {
     "id": "talon",
@@ -2662,7 +2683,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "taric",
@@ -2681,7 +2702,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "teemo",
@@ -2699,7 +2720,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier C estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier C estimado para draft competitivo."
   },
   {
     "id": "thresh",
@@ -2718,7 +2739,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "tristana",
@@ -2737,7 +2758,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "trundle",
@@ -2757,7 +2778,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "tryndamere",
@@ -2776,7 +2797,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier C estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier C estimado para draft competitivo."
   },
   {
     "id": "twisted-fate",
@@ -2794,7 +2815,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "twitch",
@@ -2812,7 +2833,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "udyr",
@@ -2832,7 +2853,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "urgot",
@@ -2851,7 +2872,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "varus",
@@ -2883,7 +2904,7 @@ export const champions: Champion[] = [
       "nautilus",
       "malphite"
     ],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier S estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier S estimado para draft competitivo."
   },
   {
     "id": "vayne",
@@ -2903,7 +2924,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "veigar",
@@ -2921,7 +2942,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "velkoz",
@@ -2941,7 +2962,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier C estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier C estimado para draft competitivo."
   },
   {
     "id": "vex",
@@ -2958,7 +2979,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "vi",
@@ -2987,7 +3008,7 @@ export const champions: Champion[] = [
       "galio"
     ],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier S estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier S estimado para draft competitivo."
   },
   {
     "id": "viego",
@@ -3006,7 +3027,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "viktor",
@@ -3023,7 +3044,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "vladimir",
@@ -3043,7 +3064,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "volibear",
@@ -3063,7 +3084,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "warwick",
@@ -3083,7 +3104,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "wukong",
@@ -3105,7 +3126,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier S estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier S estimado para draft competitivo."
   },
   {
     "id": "xayah",
@@ -3121,7 +3142,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "xerath",
@@ -3142,7 +3163,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "xin-zhao",
@@ -3162,7 +3183,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier S estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier S estimado para draft competitivo."
   },
   {
     "id": "yasuo",
@@ -3182,7 +3203,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "yone",
@@ -3202,7 +3223,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "yorick",
@@ -3221,7 +3242,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier C estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier C estimado para draft competitivo."
   },
   {
     "id": "yunara",
@@ -3237,7 +3258,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "yuumi",
@@ -3256,7 +3277,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier C estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier C estimado para draft competitivo."
   },
   {
     "id": "zaahen",
@@ -3276,7 +3297,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "zac",
@@ -3296,7 +3317,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "zed",
@@ -3313,7 +3334,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "zeri",
@@ -3329,7 +3350,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "ziggs",
@@ -3348,7 +3369,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier A estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier A estimado para draft competitivo."
   },
   {
     "id": "zilean",
@@ -3367,7 +3388,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "zoe",
@@ -3385,7 +3406,7 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   },
   {
     "id": "zyra",
@@ -3404,6 +3425,6 @@ export const champions: Champion[] = [
     "counters": [],
     "goodWith": [],
     "weakAgainst": [],
-    "notes": "Atualizado para patch 16.10.1 / 26.10. Tier B estimado para draft competitivo."
+    "notes": "Curadoria offline baseada no Data Dragon 16.21.1. Tier B estimado para draft competitivo."
   }
 ];

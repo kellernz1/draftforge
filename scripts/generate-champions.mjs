@@ -140,6 +140,7 @@ const roleSets = {
       "Katarina",
       "LeBlanc",
       "Lissandra",
+      "Locke",
       "Lucian",
       "Lux",
       "Malzahar",
@@ -300,6 +301,7 @@ const tierSets = {
     "Karma",
     "Lillia",
     "Lissandra",
+    "Locke",
     "Lucian",
     "Lulu",
     "Maokai",
@@ -380,6 +382,7 @@ const magicDamage = new Set([
   "LeBlanc",
   "Lillia",
   "Lissandra",
+  "Locke",
   "Lux",
   "Malphite",
   "Malzahar",
@@ -441,6 +444,7 @@ const manualTags = {
   "K'Sante": ["Tank", "Bruiser", "Frontline", "Peel"],
   Kalista: ["Marksman", "Early", "Bully", "Mobility"],
   Leona: ["Tank", "Engage", "Stun", "Root", "Frontline"],
+  Locke: ["Assassin", "Mage", "Dive", "Pick", "Early"],
   Nautilus: ["Tank", "Engage", "Root", "Knockup", "Frontline"],
   Orianna: ["Mage", "Shield", "AoE", "WaveClear", "Scaling"],
   Rell: ["Tank", "Engage", "Knockup", "Frontline"],
@@ -586,13 +590,13 @@ const champions = Object.values(raw)
       counters: counterMap[champion.name] ?? [],
       goodWith: goodWithMap[champion.name] ?? [],
       weakAgainst: weakAgainstMap[champion.name] ?? [],
-      notes: `Atualizado para patch 16.10.1 / 26.10. Tier ${tierFor(champion.name)} estimado para draft competitivo.`,
+      notes: `Curadoria offline baseada no Data Dragon 16.21.1. Tier ${tierFor(champion.name)} estimado para draft competitivo.`,
     };
   });
 
 const body = `import type { Champion } from "../types/Champion";
 
-// Dataset gerado a partir do Data Dragon 16.10.1 e ajustado para o meta competitivo do patch 26.10.
+// Dataset-base gerado a partir do Data Dragon 16.21.1 e curado localmente para draft competitivo.
 // Tiers: S = prioridade alta/flex/pro play, A = forte e draftavel, B = situacional, C = niche ou baixo valor competitivo.
 export const champions: Champion[] = ${JSON.stringify(champions, null, 2)};
 `;

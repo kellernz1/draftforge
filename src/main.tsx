@@ -19,14 +19,19 @@ const renderFatalError = (message: string) => {
     return;
   }
 
-  rootElement.innerHTML = `
-    <main style="min-height:100vh;display:grid;place-items:center;background:#0A0E1A;color:#E5E7EB;font-family:system-ui,sans-serif;padding:24px;">
-      <section style="max-width:720px;border:1px solid #1E2D45;background:#111827;border-radius:8px;padding:24px;">
-        <h1 style="margin:0 0 8px;color:#F59E0B;">DraftForge encontrou um erro</h1>
-        <pre style="white-space:pre-wrap;color:#CBD5E1;font-size:13px;line-height:1.5;">${message}</pre>
-      </section>
-    </main>
-  `;
+  const main = document.createElement("main");
+  main.style.cssText = "min-height:100vh;display:grid;place-items:center;background:#0A0E1A;color:#E5E7EB;font-family:system-ui,sans-serif;padding:24px";
+  const section = document.createElement("section");
+  section.style.cssText = "max-width:720px;border:1px solid #1E2D45;background:#111827;border-radius:8px;padding:24px";
+  const title = document.createElement("h1");
+  title.style.cssText = "margin:0 0 8px;color:#F59E0B";
+  title.textContent = "DraftForge encontrou um erro";
+  const details = document.createElement("pre");
+  details.style.cssText = "white-space:pre-wrap;color:#CBD5E1;font-size:13px;line-height:1.5";
+  details.textContent = message;
+  section.append(title, details);
+  main.append(section);
+  rootElement.replaceChildren(main);
 };
 
 class ErrorBoundary extends React.Component<{ children: React.ReactNode }, { error?: Error }> {

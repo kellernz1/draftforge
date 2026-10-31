@@ -4,6 +4,7 @@ import type { DraftPhaseStep, DraftState, TeamDraft } from "../types/Draft";
 
 export const createEmptyTeamDraft = (): TeamDraft => ({
   bans: [null, null, null, null, null],
+  pickOrder: [],
   picks: roles.map((role) => ({ role, championId: null })),
 });
 

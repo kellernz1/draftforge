@@ -7,16 +7,16 @@ type RoleFilterProps = {
 };
 
 export const RoleFilter = ({ value, onChange }: RoleFilterProps) => (
-  <div className="flex flex-wrap gap-2">
+  <div className="flex flex-wrap gap-1">
     {(["All", ...roles] as const).map((role) => (
       <button
         key={role}
         type="button"
         onClick={() => onChange(role)}
-        className={`rounded-md border px-3 py-2 text-xs font-bold uppercase tracking-wide transition ${
+        className={`border px-2.5 py-2 text-[9px] font-bold uppercase tracking-[0.12em] transition ${
           value === role
-            ? "border-gold bg-gold/15 text-gold"
-            : "border-line bg-panel text-slate-300 hover:border-blueTeam hover:text-white"
+            ? "border-gold bg-gold/10 text-gold"
+            : "border-[#333] bg-[#0b0b0b] text-slate-500 hover:border-slate-500 hover:text-white"
         }`}
       >
         {role}

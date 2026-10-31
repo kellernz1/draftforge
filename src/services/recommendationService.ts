@@ -44,6 +44,11 @@ export const getRecommendations = (
       const reasons: string[] = [];
       let score = tierScore[champion.tier];
 
+      if (champion.roles[0] === roleNeeded) {
+        score += 6;
+        reasons.push(`Especialista em ${roleNeeded}`);
+      }
+
       gapReasons.forEach((gap) => {
         const analysisValue = analysis[gap.key];
         const fillsGap = analysisValue < gap.threshold && champion.tags.some((tag) => gap.tags.includes(tag));
@@ -70,8 +75,15 @@ export const getRecommendations = (
         reasons.push("Flexibiliza o dano da composição");
       }
 
+      const projected = analyzeTeam([...allyPicks, champion]);
+      if (projected.damageBalance > analysis.damageBalance + 10) {
+        score += 10;
+        reasons.push("Equilibra o perfil de dano");
+      }
+
       if (enemyIds.some((enemyId) => champion.weakAgainst.includes(enemyId))) {
         score -= 14;
+        reasons.push("Tem matchup de risco nesta composição");
       }
 
       if (allyIds.length === 0 && champion.tier === "S") {

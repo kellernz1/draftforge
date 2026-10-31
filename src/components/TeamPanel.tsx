@@ -1,7 +1,9 @@
 import { useChampionStore } from "../store/useChampionStore";
+import { useDraftStore } from "../store/useDraftStore";
 import type { DraftPhaseStep, TeamDraft } from "../types/Draft";
 import { BanSlot } from "./BanSlot";
 import { PickSlot } from "./PickSlot";
+import { roles } from "../data/roles";
 
 type TeamPanelProps = {
   title: string;
@@ -14,31 +16,37 @@ type TeamPanelProps = {
 
 export const TeamPanel = ({ title, side, draft, active, currentStep, onInspectChampion }: TeamPanelProps) => {
   const champions = useChampionStore((state) => state.champions);
+  const assignPickRole = useDraftStore((state) => state.assignPickRole);
   const getChampion = (id: string | null) => champions.find((champion) => champion.id === id);
-  const accent = side === "blue" ? "border-blueTeam shadow-glow" : "border-redTeam shadow-[0_0_30px_rgba(239,68,68,0.14)]";
+  const pickOrder = draft.pickOrder ?? draft.picks.flatMap((pick) => (pick.championId ? [pick.championId] : []));
+  const accent = side === "blue" ? "border-blueTeam/70" : "border-redTeam/70";
 
   return (
-    <aside className={`rounded-lg border bg-panel/90 p-4 transition ${active ? accent : "border-line"}`}>
-      <div className="mb-4 flex items-center justify-between">
-        <h2 className="font-display text-2xl font-bold text-white">{title}</h2>
-        {active && <span className="rounded bg-gold/15 px-2 py-1 text-xs font-bold text-gold">ATIVO</span>}
+    <aside className={`border bg-[#080808] p-3 transition ${active ? accent : "border-[#292929]"}`}>
+      <div className={`mb-3 flex items-center justify-between border-b pb-2 ${side === "blue" ? "border-blueTeam/40" : "border-redTeam/40"}`}>
+        <h2 className="font-display text-lg font-bold uppercase tracking-[0.1em] text-white">{title}</h2>
+        {active && <span className="text-[9px] font-bold uppercase tracking-[0.2em] text-gold">Em seleção</span>}
       </div>
-      <div className="mb-5 grid grid-cols-5 gap-2">
+      <div className="mb-3 grid grid-cols-5 gap-1">
         {draft.bans.map((championId, index) => (
           <BanSlot key={`${side}-ban-${index}`} champion={getChampion(championId)} />
         ))}
       </div>
       <div className="space-y-2">
-        {draft.picks.map((pick) => {
-          const champion = getChampion(pick.championId);
-          const isActiveSlot = active && currentStep?.action === "pick" && currentStep.role === pick.role;
+        {roles.map((fallbackRole, index) => {
+          const championId = pickOrder[index] ?? null;
+          const champion = getChampion(championId);
+          const assignedRole = draft.picks.find((pick) => pick.championId === championId)?.role ?? fallbackRole;
+          const isActiveSlot = active && currentStep?.action === "pick" && index === pickOrder.length;
           return (
             <PickSlot
-              key={pick.role}
-              role={pick.role}
+              key={`${side}-pick-${index}`}
+              role={assignedRole}
+              slotLabel={`Pick ${index + 1}`}
               champion={champion}
               active={isActiveSlot}
               onInspect={champion ? () => onInspectChampion?.(champion.id) : undefined}
+              onRoleChange={champion ? (role) => assignPickRole(side, champion.id, role) : undefined}
             />
           );
         })}

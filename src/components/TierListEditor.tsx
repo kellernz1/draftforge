@@ -2,7 +2,10 @@ import { useMemo, useState } from "react";
 import { roles } from "../data/roles";
 import { tags as allTags } from "../data/tags";
 import { useChampionStore } from "../store/useChampionStore";
+import { champions as defaultChampions } from "../data/champions";
 import type { Champion, ChampionTier, Role } from "../types/Champion";
+import { useSettingsStore } from "../store/useSettingsStore";
+import { History, Trash2 } from "lucide-react";
 
 const tiers: ChampionTier[] = ["S", "A", "B", "C", "D"];
 
@@ -18,6 +21,11 @@ export const TierListEditor = () => {
   const champions = useChampionStore((state) => state.champions);
   const updateChampion = useChampionStore((state) => state.updateChampion);
   const resetToDefault = useChampionStore((state) => state.resetToDefault);
+  const metaSnapshots = useChampionStore((state) => state.metaSnapshots);
+  const saveMetaSnapshot = useChampionStore((state) => state.saveMetaSnapshot);
+  const removeMetaSnapshot = useChampionStore((state) => state.removeMetaSnapshot);
+  const patchVersion = useSettingsStore((state) => state.patchVersion);
+  const [selectedSnapshotId, setSelectedSnapshotId] = useState("");
   const [edits, setEdits] = useState<DraftEdits>(() =>
     Object.fromEntries(champions.map((champion) => [champion.id, { ...champion }])) as DraftEdits,
   );
@@ -49,35 +57,66 @@ export const TierListEditor = () => {
 
   const save = () => {
     Object.values(edits).forEach((champion) => updateChampion(champion.id, champion));
+    saveMetaSnapshot(patchVersion, Object.values(edits));
   };
+
+  const selectedSnapshot = metaSnapshots.find((snapshot) => snapshot.id === selectedSnapshotId) ?? metaSnapshots[0];
+  const tierChanges = selectedSnapshot
+    ? Object.values(edits).filter((champion) => selectedSnapshot.tiers[champion.id] && selectedSnapshot.tiers[champion.id] !== champion.tier)
+    : [];
 
   const reset = () => {
     resetToDefault();
-    setEdits(Object.fromEntries(champions.map((champion) => [champion.id, { ...champion }])) as DraftEdits);
+    setEdits(Object.fromEntries(defaultChampions.map((champion) => [champion.id, { ...champion }])) as DraftEdits);
   };
 
   return (
     <section className="space-y-5">
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div>
-          <h1 className="font-display text-4xl font-bold text-white">Tier List</h1>
+          <p className="eyebrow">Modelo local</p>
+          <h1 className="page-title">Tier List</h1>
           <p className="text-sm text-slate-400">Ajustes são persistidos automaticamente pelo store após salvar.</p>
         </div>
         <div className="flex gap-2">
-          <button type="button" onClick={save} className="rounded-md bg-gold px-4 py-2 font-bold text-night">
+          <button type="button" onClick={save} className="button-primary">
             Salvar
           </button>
-          <button type="button" onClick={reset} className="rounded-md border border-line px-4 py-2 font-bold text-slate-200">
+          <button type="button" onClick={reset} className="button-secondary">
             Resetar ao padrão
           </button>
         </div>
       </div>
+      <section className="panel-card p-4">
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <div className="flex items-center gap-3">
+            <span className="grid h-10 w-10 place-items-center border border-blueTeam/30 bg-blueTeam/5 text-blue-300"><History size={18} /></span>
+            <div>
+              <h2 className="font-display text-xl font-bold text-white">Patch snapshots</h2>
+              <p className="text-xs text-slate-500">Salvar cria um retrato dos tiers do patch {patchVersion}.</p>
+            </div>
+          </div>
+          {metaSnapshots.length > 0 && (
+            <div className="flex items-center gap-2">
+              <select value={selectedSnapshot?.id ?? ""} onChange={(event) => setSelectedSnapshotId(event.target.value)} className="border border-line bg-night px-3 py-2 text-sm text-slate-200">
+                {metaSnapshots.map((snapshot) => <option key={snapshot.id} value={snapshot.id}>Patch {snapshot.patchVersion} · {new Date(snapshot.createdAt).toLocaleDateString("pt-BR")}</option>)}
+              </select>
+              {selectedSnapshot && <button type="button" aria-label="Excluir snapshot" onClick={() => removeMetaSnapshot(selectedSnapshot.id)} className="icon-button text-red-300"><Trash2 size={16} /></button>}
+            </div>
+          )}
+        </div>
+        <div className="mt-4 border border-line bg-night/50 p-3 text-sm text-slate-300">
+          {!selectedSnapshot ? "Nenhum snapshot criado ainda." : tierChanges.length === 0 ? "Nenhuma mudança de tier em relação ao snapshot selecionado." : (
+            <div className="flex flex-wrap gap-2">{tierChanges.map((champion) => <span key={champion.id} className="border border-line bg-panel px-2 py-1"><strong>{champion.name}</strong> {selectedSnapshot.tiers[champion.id]} → <span className="text-gold">{champion.tier}</span></span>)}</div>
+          )}
+        </div>
+      </section>
       {grouped.map((group) => (
-        <div key={group.tier} className="rounded-lg border border-line bg-panel/90 p-4">
-          <h2 className="mb-4 font-display text-2xl font-bold text-gold">Tier {group.tier}</h2>
+        <div key={group.tier} className="border border-[#292929] bg-[#080808] p-4">
+          <h2 className="mb-4 border-b border-[#292929] pb-2 font-display text-xl font-bold uppercase tracking-[0.1em] text-gold">Tier {group.tier}</h2>
           <div className="grid gap-4 xl:grid-cols-2">
             {group.champions.map((champion) => (
-              <article key={champion.id} className="rounded-md border border-line bg-night/60 p-4">
+              <article key={champion.id} className="border border-[#292929] bg-[#0b0b0b] p-4">
                 <div className="grid gap-3 md:grid-cols-[1fr_88px]">
                   <h3 className="font-display text-2xl font-bold text-white">{champion.name}</h3>
                   <select
@@ -117,7 +156,7 @@ export const TierListEditor = () => {
                     </option>
                   ))}
                 </select>
-                <div className="mt-3 grid gap-3 md:grid-cols-2">
+                <div className="mt-3 grid gap-3 md:grid-cols-3">
                   <input
                     value={champion.counters.join(", ")}
                     onChange={(event) => patchChampion(champion.id, { counters: parseCsv(event.target.value) })}
@@ -129,6 +168,12 @@ export const TierListEditor = () => {
                     onChange={(event) => patchChampion(champion.id, { goodWith: parseCsv(event.target.value) })}
                     className="rounded border border-line bg-panel px-3 py-2 text-sm text-white"
                     placeholder="goodWith"
+                  />
+                  <input
+                    value={champion.weakAgainst.join(", ")}
+                    onChange={(event) => patchChampion(champion.id, { weakAgainst: parseCsv(event.target.value) })}
+                    className="rounded border border-line bg-panel px-3 py-2 text-sm text-white"
+                    placeholder="weakAgainst"
                   />
                 </div>
                 <textarea

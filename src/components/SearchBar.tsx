@@ -8,6 +8,6 @@ export const SearchBar = ({ value, onChange }: SearchBarProps) => (
     value={value}
     onChange={(event) => onChange(event.target.value)}
     placeholder="Buscar campeão..."
-    className="h-11 w-full rounded-md border border-line bg-night/70 px-4 text-sm text-slate-100 outline-none transition focus:border-blueTeam"
+    className="h-9 w-full border border-[#333] bg-[#050505] px-3 text-xs text-slate-100 outline-none transition placeholder:text-slate-600 focus:border-gold/70"
   />
 );

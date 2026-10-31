@@ -5,6 +5,7 @@ import { analyzeTeam } from "../services/analysisService";
 import type { TeamAnalysis } from "../types/Analysis";
 
 const labels: Record<keyof TeamAnalysis, string> = {
+  completeness: "Draft",
   damageBalance: "Dano",
   frontline: "Frontline",
   engage: "Engage",
@@ -17,13 +18,13 @@ const labels: Record<keyof TeamAnalysis, string> = {
 
 const TeamBars = ({ title, analysis, color }: { title: string; analysis: TeamAnalysis; color: string }) => (
   <div>
-    <h3 className="mb-3 font-display text-xl font-bold text-white">{title}</h3>
+    <h3 className="mb-3 font-display text-sm font-bold uppercase tracking-[0.1em] text-white">{title}</h3>
     <div className="space-y-2">
       {(Object.keys(labels) as (keyof TeamAnalysis)[]).map((key) => (
         <div key={key} className="grid grid-cols-[82px_1fr_36px] items-center gap-2 text-xs">
           <span className="text-slate-400">{labels[key]}</span>
-          <div className="h-2 overflow-hidden rounded bg-slate-800">
-            <div className={`h-full rounded ${color}`} style={{ width: `${analysis[key]}%` }} />
+          <div className="h-1 overflow-hidden bg-[#242424]">
+            <div className={`h-full ${color}`} style={{ width: `${analysis[key]}%` }} />
           </div>
           <span className="text-right font-semibold text-slate-300">{analysis[key]}</span>
         </div>
@@ -33,6 +34,9 @@ const TeamBars = ({ title, analysis, color }: { title: string; analysis: TeamAna
 );
 
 const feedback = (team: string, analysis: TeamAnalysis) => {
+  if (analysis.completeness < 60) {
+    return `${team}: análise preliminar — complete ao menos três picks.`;
+  }
   if (analysis.frontline < 40) {
     return `${team} tem pouco frontline. Considere um tanque.`;
   }
@@ -66,7 +70,7 @@ export const AnalysisPanel = () => {
   }, [blueTeam.picks, champions, redTeam.picks]);
 
   return (
-    <section className="rounded-lg border border-line bg-panel/90 p-4">
+    <section className="border border-[#292929] bg-[#080808] p-4">
       <div className="grid gap-6 xl:grid-cols-2">
         <TeamBars title="Blue Analysis" analysis={blueAnalysis} color="bg-blueTeam" />
         <TeamBars title="Red Analysis" analysis={redAnalysis} color="bg-redTeam" />
